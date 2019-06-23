@@ -23,15 +23,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
-import com.nflowcoffee.android.adapters.GardenPlantingAdapter
+import com.nflowcoffee.android.adapters.MainAdapter
 import com.nflowcoffee.android.databinding.FragmentMainBinding
 import com.nflowcoffee.android.utilities.InjectorUtils
-import com.nflowcoffee.android.viewmodels.GardenPlantingListViewModel
+import com.nflowcoffee.android.viewmodels.MainListViewModel
 
 class MainFragment : Fragment() {
 
-    private val viewModel: GardenPlantingListViewModel by viewModels {
-        InjectorUtils.provideGardenPlantingListViewModelFactory(requireContext())
+    private val viewModel: MainListViewModel by viewModels {
+        InjectorUtils.provideMainListViewModelFactory(requireContext())
     }
 
     override fun onCreateView(
@@ -40,13 +40,13 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentMainBinding.inflate(inflater, container, false)
-        val adapter = GardenPlantingAdapter()
-        binding.gardenList.adapter = adapter
+        val adapter = MainAdapter()
+        binding.mainList.adapter = adapter
         subscribeUi(adapter, binding)
         return binding.root
     }
 
-    private fun subscribeUi(adapter: GardenPlantingAdapter, binding: FragmentMainBinding) {
+    private fun subscribeUi(adapter: MainAdapter, binding: FragmentMainBinding) {
         viewModel.gardenPlantings.observe(viewLifecycleOwner) { plantings ->
             binding.hasPlantings = !plantings.isNullOrEmpty()
         }

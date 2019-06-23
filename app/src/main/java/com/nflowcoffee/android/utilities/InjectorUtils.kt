@@ -20,7 +20,7 @@ import android.content.Context
 import com.nflowcoffee.android.data.AppDatabase
 import com.nflowcoffee.android.data.GardenPlantingRepository
 import com.nflowcoffee.android.data.PlantRepository
-import com.nflowcoffee.android.viewmodels.GardenPlantingListViewModelFactory
+import com.nflowcoffee.android.viewmodels.MainListViewModelFactory
 import com.nflowcoffee.android.viewmodels.PlantDetailViewModelFactory
 import com.nflowcoffee.android.viewmodels.PlantListViewModelFactory
 
@@ -34,16 +34,16 @@ object InjectorUtils {
                 AppDatabase.getInstance(context.applicationContext).plantDao())
     }
 
-    private fun getGardenPlantingRepository(context: Context): GardenPlantingRepository {
+    private fun getMainRepository(context: Context): GardenPlantingRepository {
         return GardenPlantingRepository.getInstance(
                 AppDatabase.getInstance(context.applicationContext).gardenPlantingDao())
     }
 
-    fun provideGardenPlantingListViewModelFactory(
+    fun provideMainListViewModelFactory(
         context: Context
-    ): GardenPlantingListViewModelFactory {
-        val repository = getGardenPlantingRepository(context)
-        return GardenPlantingListViewModelFactory(repository)
+    ): MainListViewModelFactory {
+        val repository = getMainRepository(context)
+        return MainListViewModelFactory(repository)
     }
 
     fun providePlantListViewModelFactory(context: Context): PlantListViewModelFactory {
@@ -56,6 +56,6 @@ object InjectorUtils {
         plantId: String
     ): PlantDetailViewModelFactory {
         return PlantDetailViewModelFactory(getPlantRepository(context),
-                getGardenPlantingRepository(context), plantId)
+                getMainRepository(context), plantId)
     }
 }

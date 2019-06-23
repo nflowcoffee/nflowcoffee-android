@@ -32,7 +32,7 @@
             android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/garden_list"
+                android:id="@+id/main_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
@@ -40,16 +40,16 @@
                 android:paddingRight="@dimen/margin_normal"
                 app:isGone="@{!hasPlantings}"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/list_item_garden_planting"/>
+                tools:listitem="@layout/list_item_main"/>
 
-        <TextView
+        <!-- TextView
                 android:id="@+id/empty_garden"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/garden_empty"
                 android:textSize="24sp"
-                app:isGone="@{hasPlantings}"/>
+                app:isGone="@{hasPlantings}"/-->
 
     </FrameLayout>
 

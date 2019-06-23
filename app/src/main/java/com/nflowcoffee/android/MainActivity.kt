@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 R.layout.activity_main)
         drawerLayout = binding.drawerLayout
 
-        navController = findNavController(R.id.garden_nav_fragment)
+        navController = findNavController(R.id.main_nav_fragment)
         appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
 
         // Set up ActionBar

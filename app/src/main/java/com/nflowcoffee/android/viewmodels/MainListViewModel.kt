@@ -22,7 +22,7 @@ import androidx.lifecycle.map
 import com.nflowcoffee.android.data.GardenPlantingRepository
 import com.nflowcoffee.android.data.PlantAndGardenPlantings
 
-class GardenPlantingListViewModel internal constructor(
+class MainListViewModel internal constructor(
     gardenPlantingRepository: GardenPlantingRepository
 ) : ViewModel() {
 

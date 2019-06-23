@@ -27,17 +27,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.nflowcoffee.android.MainFragmentDirections
 import com.nflowcoffee.android.R
 import com.nflowcoffee.android.data.PlantAndGardenPlantings
-import com.nflowcoffee.android.databinding.ListItemGardenPlantingBinding
+import com.nflowcoffee.android.databinding.ListItemMainBinding
 import com.nflowcoffee.android.viewmodels.PlantAndGardenPlantingsViewModel
 
-class GardenPlantingAdapter :
-    ListAdapter<PlantAndGardenPlantings, GardenPlantingAdapter.ViewHolder>(GardenPlantDiffCallback()) {
+class MainAdapter :
+    ListAdapter<PlantAndGardenPlantings, MainAdapter.ViewHolder>(GardenPlantDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
                 DataBindingUtil.inflate(
                         LayoutInflater.from(parent.context),
-                        R.layout.list_item_garden_planting, parent, false
+                        R.layout.list_item_main, parent, false
                 )
         )
     }
@@ -60,7 +60,7 @@ class GardenPlantingAdapter :
     }
 
     class ViewHolder(
-        private val binding: ListItemGardenPlantingBinding
+        private val binding: ListItemMainBinding
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(listener: View.OnClickListener, plantings: PlantAndGardenPlantings) {

@@ -51,7 +51,7 @@ class PlantDetailFragmentTest {
         activityTestRule.activity.apply {
             runOnUiThread {
                 val bundle = Bundle().apply { putString("plantId", testPlant.plantId) }
-                findNavController(R.id.garden_nav_fragment).navigate(R.id.plant_detail_fragment, bundle)
+                findNavController(R.id.main_nav_fragment).navigate(R.id.plant_detail_fragment, bundle)
             }
         }
     }

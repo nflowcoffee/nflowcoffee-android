@@ -21,15 +21,15 @@ import androidx.lifecycle.ViewModelProvider
 import com.nflowcoffee.android.data.GardenPlantingRepository
 
 /**
- * Factory for creating a [GardenPlantingListViewModel] with a constructor that takes a
+ * Factory for creating a [MainListViewModel] with a constructor that takes a
  * [GardenPlantingRepository].
  */
-class GardenPlantingListViewModelFactory(
+class MainListViewModelFactory(
     private val repository: GardenPlantingRepository
 ) : ViewModelProvider.NewInstanceFactory() {
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return GardenPlantingListViewModel(repository) as T
+        return MainListViewModel(repository) as T
     }
 }
