@@ -32,8 +32,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.navArgs
 import com.google.android.material.snackbar.Snackbar
-import com.nflowcoffee.android.PlantDetailFragmentArgs
-import com.nflowcoffee.android.R
 import com.nflowcoffee.android.databinding.FragmentPlantDetailBinding
 import com.nflowcoffee.android.utilities.InjectorUtils
 import com.nflowcoffee.android.viewmodels.PlantDetailViewModel

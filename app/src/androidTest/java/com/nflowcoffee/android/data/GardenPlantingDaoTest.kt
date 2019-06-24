@@ -25,9 +25,6 @@ import com.nflowcoffee.android.utilities.testCalendar
 import com.nflowcoffee.android.utilities.testGardenPlanting
 import com.nflowcoffee.android.utilities.testPlant
 import com.nflowcoffee.android.utilities.testPlants
-import com.nflowcoffee.android.data.AppDatabase
-import com.nflowcoffee.android.data.GardenPlanting
-import com.nflowcoffee.android.data.GardenPlantingDao
 import org.hamcrest.CoreMatchers.equalTo
 import org.junit.After
 import org.junit.Assert.assertNull

@@ -16,7 +16,6 @@
 
 package com.nflowcoffee.android.data
 
-import com.nflowcoffee.android.data.Plant
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

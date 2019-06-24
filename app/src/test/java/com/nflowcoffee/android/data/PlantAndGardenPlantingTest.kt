@@ -16,7 +16,6 @@
 
 package com.nflowcoffee.android.data
 
-import com.nflowcoffee.android.data.PlantAndGardenPlantings
 import org.junit.Assert.assertTrue
 import org.junit.Test
 

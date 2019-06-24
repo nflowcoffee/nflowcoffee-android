@@ -26,7 +26,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
-import com.nflowcoffee.android.R
 import com.nflowcoffee.android.adapters.PlantAdapter
 import com.nflowcoffee.android.databinding.FragmentPlantListBinding
 import com.nflowcoffee.android.utilities.InjectorUtils

@@ -21,9 +21,6 @@ import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import com.nflowcoffee.android.utilities.getValue
-import com.nflowcoffee.android.data.AppDatabase
-import com.nflowcoffee.android.data.Plant
-import com.nflowcoffee.android.data.PlantDao
 import org.hamcrest.Matchers.equalTo
 import org.junit.After
 import org.junit.Assert.assertThat

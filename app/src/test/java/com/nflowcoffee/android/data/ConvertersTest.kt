@@ -16,7 +16,6 @@
 
 package com.nflowcoffee.android.data
 
-import com.nflowcoffee.android.data.Converters
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import java.util.Calendar

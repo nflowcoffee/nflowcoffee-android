@@ -24,7 +24,6 @@ import com.nflowcoffee.android.data.GardenPlantingRepository
 import com.nflowcoffee.android.data.PlantRepository
 import com.nflowcoffee.android.utilities.getValue
 import com.nflowcoffee.android.utilities.testPlant
-import com.nflowcoffee.android.viewmodels.PlantDetailViewModel
 import org.junit.After
 import org.junit.Assert.assertFalse
 import org.junit.Before
